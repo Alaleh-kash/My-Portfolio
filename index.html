@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b63fc8b98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index2.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+            <div class="header-text">
+                <div class="row">
+                    <div class="column">
+                        <h1 style="margin-top: 20%;">Hi,<br> I'm <span>Alaleh</span></h1><br>
+                        <p style="font-size: 18px;font-style:'arial', sans-serif; font-weight: bold;">I'm a Front-end Developer</p>
+                        
+                    </div>
+                    <div class="column" style="margin-right: 50px;">
+                        <img class="hero" src="./Images/photo_2.jpg" alt="">
+                    </div>
+                    
+                    <div class="column" style="margin-left: 10px;">
+                        <p  style="font-size: 24px; margin-top: 25%;font-style:'arial', sans-serif; font-weight: bold;">Based in Montreal Canada</p><br>
+                        <p style="font-size: 18px;font-style:'arial', sans-serif;line-height: 1.5rem;color: #4d4c4c;">Experienced in web design, UX/UI design, and development,
+                            With a keen eye for aesthetics and a strong technical skill set.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- -------about---------- -->
+    <div id="about">
+        <div class="container">
+           
+                    <h1 class="sub-title">About Me</h1> 
+                    <br>
+                    <p style="width: 80%; font-size: 18px;line-height: 1.8rem;font-style:'arial', sans-serif; color:#797878 ;">As a passionate and experienced web 
+                        developer with a strong background in Web Design and UX/UI Design, I bring creativity and technical 
+                        proficiency to every project I undertake. My commitment is to
+                         deliver not just visually stunning websites but also ensure seamless 
+                         user experiences. I believe in the power of aesthetics. Each design is a 
+                         blend of innovation and functionality, creating visually appealing interfaces 
+                         that leave a lasting impression.
+                         My development skills complement my design finesse. Proficient in HTML, CSS, 
+                         JavaScript, and more. I bring concepts to life with clean, efficient, and responsive 
+                         code. Understanding the user is at the core of my design philosophy. I focus on creating
+                          interfaces that are intuitive, user-friendly, and elevate the overall digital experience.
+                         My goal is to exceed expectations, delivering solutions that drive tangible results
+                         for clients.</p>
+                    
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" style="margin-bottom: 50px;margin-top: 10px;">Some projects</h1>
+            <!--product Card-->
+    <section class="products">
+        <div class="product">
+            <img src="./Images/aritzia.jpg" alt="Aritzia">
+            <br><br><br>
+            <h3>Web Design & Development Projects</h3><br>
+            
+            <a href="index2.html" style="text-decoration: none; font-size: 16px;">
+            <span style="font-weight: bold; font-size: 18px;">Take a look</span>
+            </a>
+           
+        </div>
+                <div class="product">
+                    <img src="./Images/lavender.jpg" alt="Aldo">
+                    <br><br>
+                    <h3>UX/UI Projects</h3><br><br>
+                   
+                    <a href="index2.html" style="text-decoration: none; font-size: 16px;">
+                    <span style="font-weight: bold; font-size: 18px;">Take a look</span>
+                    </a>
+                </div>
+
+                
+            <div class="product">
+                <img src="./Images/photoshop-1.jpg" alt="business-marketing">
+                <br><br>
+                <h3>Design Projects</h3><br>
+               
+                <a href="index2.html" style="text-decoration: none; font-size: 16px;">
+                <span style="font-weight: bold; font-size: 18px;">Take a look</span>
+                </a>
+            </div>
+            </div>
+           </section>
+
+    <br><br>
+    <!-- --------contact----- -->
+    <div id="contact">
+        <div class="container-1">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> alaleh.kashani34@gmail.com</p>
+                    <p style="line-height: 1.2rem;"><i class="fa-solid fa-phone"></i> +1 (514) 581-4505</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/alaleh-kashani"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Images/Resume.pdf" download="" class="btn btn2" style="margin-right: 42%;">Dowmload Resume</a>
+                </div>
+                <div class="contact-right">
+                   
+                    <form id="contactForm" action="send_message.php" method="POST">
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                    
+                        <label for="email">Your Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                    
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developed by Alaleh Kash <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <!-- -------javascript--------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> 
+
+<!-- Side menu java script code -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- Script for contact form -->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        var formData = new FormData(this);
+        fetch("send_message.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text(); 
+            }
+            throw new Error("Network response was not ok.");
+        })
+        .then(data => {
+            alert(data); 
+        })
+        .catch(error => {
+            console.error("There was a problem with the fetch operation:", error);
+            alert("Failed to send message. Please try again later.");
+        });
+    });
+    </script>
+</body>
+</html>
+

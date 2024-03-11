@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b63fc8b98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="" class="logo">
+        <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="index2.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <!--<div id="header">
+            <div class="header-text">
+                <div class="row">
+                    <div class="column">
+                        <h1 style="margin-top: 20%;">Hi,<br> I'm <span>Alaleh</span></h1>
+                        
+                    </div>
+                    <div class="column" style="margin-right: 50px;">
+                        <img class="hero" src="./Images/picture.jpg" alt="">
+                    </div>
+                    
+                    <div class="column" style="margin-left: 10px;">
+                        <p  style="font-size: 24px; margin-top: 25%;font-style:'arial', sans-serif; font-weight: bold;">Based in Montreal Canada</p><br>
+                        <p style="font-size: 18px;font-style:'arial', sans-serif; font-weight: bold;">I'm a Front-end Developer and Web UX/UI designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <br><br>
+    <!-- -------about---------- -->
+    <div id="about" style="background-color: rgb(248, 249, 249);">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                <img src="Images/photo_1.jpg" alt="Profile">
+                </div>
+                <div class="about-col-2">
+                    
+                    <h1 class="sub-title">About Me</h1> 
+                    <br>
+                    <p style="width: 80%; font-size: 18px;line-height: 1.8rem;font-style:'arial', sans-serif; color:#797878 ;">I am a Front-End developer and Web UX/UI designer based in Canada. 
+                        My journey into the world of web development began with a curiosity to bridge the gap between form and function.
+                         I thrive on transforming ideas into interactive and visually appealing websites that not only meet but exceed user expectations.
+
+                        Fascinated by technology and driven by a desire to create meaningful solutions, I ventured into the realm of digital design. 
+                        UX/UI design has proven to be the perfect intersection of my interests and abilities. My primary objective is to craft 
+                        effective and user-friendly interfaces that enhance the overall experience.
+                        
+                        I enjoy the challenge of troubleshooting and finding innovative solutions to complex issues.
+                        
+                        Driven by goals, motivation, and a lifelong commitment to learning, I continuously seek opportunities to make a 
+                        positive impact and refine my skills.</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience_tab')">Experience</p>
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- -----skills------- -->
+                        <div class="tab-contents" id="skills">
+                            <ul> 
+                                <li><span>Web Design</span></li>
+                                <li><span>Web Development</span></li>
+                                <li><span>UX UI Design</span></li>
+                                <li><span>WordPress</span></li>
+                            </ul>
+                        </div>
+                        <!-- -----------experience--------- -->
+                        <div class="tab-contents" id="experience_tab">
+                            <div class="experience">
+                                <div class="column">
+                                    <p class="label">Role:</p>
+                                    <br>
+                                    <p class="content"><b>Front-End Developer</b></p>
+                                </div>
+                                <div class="column">
+                                    <p class="label">Responsibilities:</p>
+                                    <br>
+                                    <p class="content">• Developing the front-end of the Co-parent web application using JavaScript, 
+                                    React.js, Styled Components, MongoDB, HTML, and CSS.<br>
+                                    • Participating in code reviews to offer constructive feedback aimed at enhancing code 
+                                    quality and maintaining coding standards.<br>
+                                    • Collaborating closely with the UI/UX team, backend developers, and stakeholders to provide technical 
+                                    expertise and contribute to project planning and estimation.</p><br>
+                                </div>
+                                <div class="column">
+                                    <p class="label">Date:</p>
+                                    <br>
+                                    <p class="content">January 2024 - Present</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+                        <!-- -------------education----------- -->
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>Web Design & Development Certificate</span><br>CDI College</li>
+                                <li>2022 - 2024</li>
+                                <li><span>UX|UI Design Certificate</span><br>UXLand School</li>
+                                <li>2021</li>
+                                <li><span>University Of Montreal Certificate</span><br>French Language</li>
+                                <li>2014 - 2015</li>
+                                <li><span>Bachelor of Arts in French Language</span><br>Tehran Azad University</li>
+                                <li>2003 - 2007</li>
+                        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+          <!--Habits and Interested-->
+
+      <div class="container">
+        <h1 class="sub-title">Habits and Interested</h1>
+        <br>
+           <ul style="color: #4d4c4c;">
+            <li>playing sports (Workout every day, swimming and Yoga)</li>
+            <br>
+            <li>Photography</li>
+            <br>
+            <li>Healthy lifestyle</li>
+            <br>
+            <li>Traveling</li>
+            <br>
+            <li>Cooking</li>
+            <br>
+            <li>Gathering with my friends</li>
+            <br>
+            <li>Learning new skill</li>
+            <br>
+            <li>Stay update and Make use of feedback</li>
+            <br>
+            <li>Collaboration</li>
+        </ul>
+      </div>
+           
+       <div class="container">
+        <h1 class="sub-title" style="color: aliceblue;">Contact Me</h1>
+       <br><br>
+        <p style="text-align: center;">Send me an email at alaleh.kashani34@gmail.com or find me at</p>
+        <br>
+       
+        <a class="btn btn2" href="https://www.linkedin.com/in/alaleh-kashani/" style=" margin-left: 44%;">LinkedIn</a>
+
+       </div>
+    
+        </div>
+        <div class="copyright">
+            <p>Developed by Alaleh Kash <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+  <!-- -------javascript--------------- -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+
+<!-- Side menu java script code -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
