@@ -54,7 +54,6 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-
 /*script index */
 
 var tablinks = document.getElementsByClassName("tab-links");
