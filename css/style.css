@@ -120,7 +120,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-  font-style: 'arial', sans-serif;
+  font-family: 'arial', sans-serif;
   font-size: 36px;
   font-weight: 500;
   color: #555555;
@@ -132,7 +132,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title p {
-  font-style: 'arial', sans-serif;
+  font-family: 'arial', sans-serif;
   font-size: 20px;
   line-height: 1.5rem;
   font-weight: 400;
@@ -190,7 +190,7 @@ nav ul li a:hover::after {
 }
 
 .content {
-  font-style: 'arial', sans-serif;
+  font-family: 'arial', sans-serif;
   color: #4d4c4c;
   line-height: 1.5rem;
 }
