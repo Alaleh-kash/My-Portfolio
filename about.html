@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-L/tZoKoYBM8v8GRz+5Yw1Hp56OGjL99Hwlxu8vXZ8jQvIkgix9XJFcf8Uq1KB+2y" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/4b63fc8b98.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <img src="" class="logo">
+    <ul id="sidemenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="index2.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </nav>
+
+  <br><br>
+  <!-- -------about---------- -->
+  <div id="about" style="background-color: rgb(248, 249, 249);">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/photo_2025.jpg" alt="Profile">
+        </div>
+        <div class="about-col-2">
+
+          <h1 class="sub-title" style="font-weight:300; font-size:1.6rem; color:#757575;">About Me</h1>
+
+          <p style="width: 80%; font-size: 14px;line-height: 1.8rem;font-style:'arial', sans-serif; color: #555555;;">I am a Web designer and Front-End developer based in Canada.
+            My journey into the world of web development began with a curiosity to bridge the gap between form and function. I'm passionate about bringing both
+            the technical and visual aspects of digital products to life. <br><br>
+            I thrive on transforming ideas into interactive and visually appealing websites that not only meet but exceed user expectations.<br>
+
+            Fascinated by technology and driven by a desire to create meaningful solutions, I ventured into the domain of web development.<br><br>
+            Programming has proven to be the perfect intersection of my interests and abilities. My primary objective is to craft
+            effective and user-friendly interfaces that enhance the overall experience.<br><br>
+
+            I enjoy the challenge of troubleshooting and finding innovative solutions to complex issues.
+
+            Driven by goals, motivation, and a lifelong commitment to learning, I continuously seek opportunities to make a
+            positive impact and refine my skills.</p>
+            <br><br><br>
+
+          <div class="tab-titles">
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience_tab')">Experience</p>
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+          </div>
+          <!-- -----skills------- -->
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Web Development</span></li>
+              <li><span>Web Design</span></li>
+              <li><span>UX UI Design</span></li>
+              <li><span>WordPress</span></li>
+              <li><span>React.js</span></li>
+              <li><span>Node.js</span></li>
+              <li><span>Figma</span></li>
+            </ul>
+          </div>
+          <!-- -----------experience--------- -->
+          <div class="tab-contents" id="experience_tab">
+            <div class="experience">
+              <div class="column">
+                <p class="label">Role:</p>
+                <br>
+                <p class="content"><b>Front-End Developer</b></p>
+                <p>Women IT Teleworkers</p>
+              </div>
+              <div class="column">
+                <p class="label">Responsibilities:</p>
+                <br>
+                <ul class="arrow-list" style="line-height: 1.5rem;">
+                  <li>Developing the front-end of the Co-parent web application using JavaScript, React.js, Styled Components, MongoDB, HTML, and CSS.</li>
+                  <li>Participating in code reviews to offer constructive feedback aimed at enhancing code quality and maintaining coding standards.</li>
+                  <li>Collaborating closely with the UI/UX team, backend developers, and stakeholders to provide technical expertise and contribute to project planning and estimation.</li>
+                </ul>
+              </div>
+              <div class="column">
+                <p class="label">Date:</p>
+                <br>
+                <p class="content">January 2024 - Present</p>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- -------------education----------- -->
+          <div class="tab-contents active-tab" id="education">
+            <ul >
+              <li><span>Web Design Certificate</span><br><br>CDI College</li>
+              <li>2023 - 2024</li><br>
+              <li><span>The Complete JavaScript Course 2024 Certificate</span><br><br>Udemy</li>
+              <li>2024</li><br>
+              <li><span>Google UX Design Professional Certificate</span><br><br>Coursera</li>
+              <li>2022-2023</li><br>
+              <li><span>The Complete Web Development Certificate</span><br><br>Udemy</li>
+              <li>2021</li><br>
+              <li><span>English Language Certificate</span><br><br>University Of TELUQ</li>
+              <li>2016</li><br>
+              <li><span>French Language Certificate</span><br><br>University Of Montreal</li>
+              <li>2014 - 2015</li><br>
+              <li><span>Bachelor Degree in French language Translation</span><br><br>Azad Tehran University</li>
+              <li>2004 - 2007</li><br>
+              <li><span>Bachelor of Computer Science</span><br><br>Azad Tehran University</li>
+              <li>2000 - 2004</li><br>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!--Habits and Interested-->
+
+  <div class="container">
+    <h1 class="sub-title" style="font-size: 1.4rem; color: #757575;">Habits and Interests</h1>
+    <br>
+    <ul class="arrow-list" style="color: #555555;">
+      <li>playing sports (Workout every day, Swimming, Skiing, and Yoga)</li>
+      <br>
+      <li>Photography</li>
+      <br>
+      <li>Healthy lifestyle</li>
+      <br>
+      <li>Traveling</li>
+      <br>
+      <li>Cooking</li>
+      <br>
+      <li>Gathering with my friends</li>
+      <br>
+      <li>Learning new skills</li>
+      <br>
+      <li>Stay updated and Make use of feedback</li>
+      <br>
+      <li>Collaboration</li>
+    </ul>
+  </div>
+  <!-- contact -->
+<br><br>
+<div class="container">
+  <h1 class="sub-title" style="color:#757575;">Contact Me</h1>
+  <br><br>
+  <p style="text-align: center;">Send me an email at alaleh.kashani34@gmail.com or find me at</p>
+  <br>
+  <a class="btn" href="https://www.linkedin.com/in/alaleh-kashani/">LinkedIn</a>
+</div>
+
+
+  <div class="copyright">
+    <p style="font-size: 13px;">© 2024 Alaleh Kash</p>
+  </div>
+  </div>
+  <!-- -------javascript--------------- -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
