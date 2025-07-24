@@ -1,6 +1,5 @@
-/*Side menu java script code */
-
-var sidemenu = document.getElementById("sidemenu");
+// --- Side menu ---
+const sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
   sidemenu.style.right = "0";
@@ -10,80 +9,48 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
-function toggleIcon(event) {
+// --- Tab switching (About Me section, etc.) ---
 
-  event.preventDefault();
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
 
-  const icon = event.currentTarget.querySelector('.fa-external-link-alt');
-  icon.classList.toggle('hidden');
+function opentab(tabname) {
+  for (let tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (let tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
 }
 
-function toggleIcon(event) {
-
-  console.log("Link clicked");
-}
-
-/*Zoom image*/
+// --- Zoom image function (gallery, portfolio images, etc.) ---
 function toggleImage(imageSrc) {
-  var largerImageContainer = document.getElementById('largerImageContainer');
-  var largerImage = document.getElementById('largerImage');
+  const largerImageContainer = document.getElementById("largerImageContainer");
+  const largerImage = document.getElementById("largerImage");
 
-  if (largerImageContainer.style.display === 'block') {
-
-    largerImageContainer.style.display = 'none';
+  if (largerImageContainer.style.display === "block") {
+    largerImageContainer.style.display = "none";
   } else {
-
     largerImage.src = imageSrc;
-    largerImageContainer.style.display = 'block';
+    largerImageContainer.style.display = "block";
   }
 }
 
-/*about me*/
-
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname) {
-  for (tablink of tablinks) {
-    tablink.classList.remove("active-link");
+// --- External link icon toggle (optional, only if using Font Awesome) ---
+function toggleIcon(event) {
+  event.preventDefault();
+  const icon = event.currentTarget.querySelector(".fa-external-link-alt");
+  if (icon) {
+    icon.classList.toggle("hidden");
   }
-  for (tabcontent of tabcontents) {
-    tabcontent.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
 }
 
-/*script index */
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname) {
-  for (tablink of tablinks) {
-    tablink.classList.remove("active-link");
-  }
-  for (tabcontent of tabcontents) {
-    tabcontent.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
-}
-
-/*Side menu java script*/
-
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-  sidemenu.style.right = "0";
-}
-
-function closemenu() {
-  sidemenu.style.right = "-200px";
-}
-
-/*Script for contact form */
-
+// This will NOT work on GitHub because it requires a PHP server.
+// Use services like Formspree or EmailJS instead if you want to enable contact forms.
+/*
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault();
   var formData = new FormData(this);
@@ -105,34 +72,4 @@ document.getElementById("contactForm").addEventListener("submit", function(event
       alert("Failed to send message. Please try again later.");
     });
 });
-
-function toggleIcon(event) {
-
-  event.preventDefault();
-
-  const icon = event.currentTarget.querySelector('.fa-external-link-alt');
-  icon.classList.toggle('hidden');
-}
-
-/*Link Clicked*/
-
-function toggleIcon(event) {
-
-  console.log("Link clicked");
-}
-
-/*Larger Image*/
-
-function toggleImage(imageSrc) {
-  var largerImageContainer = document.getElementById('largerImageContainer');
-  var largerImage = document.getElementById('largerImage');
-
-  if (largerImageContainer.style.display === 'block') {
-
-    largerImageContainer.style.display = 'none';
-  } else {
-
-    largerImage.src = imageSrc;
-    largerImageContainer.style.display = 'block';
-  }
-}
+*/
