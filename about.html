@@ -14,6 +14,7 @@
 </head>
 
 <body>
+   <!-- Menu -->
   <nav>
     <img src="" class="logo">
     <ul id="sidemenu">
@@ -53,11 +54,12 @@
             positive impact and refine my skills.</p>
             <br><br><br>
 
-          <div class="tab-titles">
-            <p class="tab-links" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience_tab')">Experience</p>
-            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-          </div>
+           <!-- Tabs -->
+  <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+  </div>
           <!-- -----skills------- -->
           <div class="tab-contents" id="skills">
             <ul>

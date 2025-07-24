@@ -9,12 +9,11 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
-// --- Tab switching (About Me section, etc.) ---
-
+// --- Tab switching ---
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
+function opentab(event, tabname) {
   for (let tablink of tablinks) {
     tablink.classList.remove("active-link");
   }
@@ -25,20 +24,20 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-// --- Zoom image function (gallery, portfolio images, etc.) ---
+// --- Optional: Zoom image ---
 function toggleImage(imageSrc) {
-  const largerImageContainer = document.getElementById("largerImageContainer");
-  const largerImage = document.getElementById("largerImage");
+  const container = document.getElementById("largerImageContainer");
+  const image = document.getElementById("largerImage");
 
-  if (largerImageContainer.style.display === "block") {
-    largerImageContainer.style.display = "none";
+  if (container.style.display === "block") {
+    container.style.display = "none";
   } else {
-    largerImage.src = imageSrc;
-    largerImageContainer.style.display = "block";
+    image.src = imageSrc;
+    container.style.display = "block";
   }
 }
 
-// --- External link icon toggle (optional, only if using Font Awesome) ---
+// --- Optional: Toggle icon ---
 function toggleIcon(event) {
   event.preventDefault();
   const icon = event.currentTarget.querySelector(".fa-external-link-alt");
@@ -47,29 +46,25 @@ function toggleIcon(event) {
   }
 }
 
-
-// This will NOT work on GitHub because it requires a PHP server.
-// Use services like Formspree or EmailJS instead if you want to enable contact forms.
+// --- Contact form (disabled for GitHub) ---
 /*
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault();
   var formData = new FormData(this);
   fetch("send_message.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => {
-      if (response.ok) {
-        return response.text();
-      }
-      throw new Error("Network response was not ok.");
-    })
-    .then(data => {
-      alert(data);
-    })
-    .catch(error => {
-      console.error("There was a problem with the fetch operation:", error);
-      alert("Failed to send message. Please try again later.");
-    });
+    method: "POST",
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) return response.text();
+    throw new Error("Network response was not ok.");
+  })
+  .then(data => {
+    alert(data);
+  })
+  .catch(error => {
+    console.error("Fetch error:", error);
+    alert("Failed to send message.");
+  });
 });
 */
