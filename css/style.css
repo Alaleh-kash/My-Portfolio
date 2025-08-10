@@ -94,6 +94,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
   padding-top: 8%;
 }
 
@@ -577,5 +578,20 @@ a:hover .fas {
   font-size: 16px;
 }
 
+img.full-width {
+  width: 100%;
+  height: auto; 
+  display: block; 
+}
 
+.container-1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 10%;
+}
 
+.full-width {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
